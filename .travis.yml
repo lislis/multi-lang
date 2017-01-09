@@ -1,0 +1,9 @@
+lang: ruby
+
+matrix:
+  - lang: android
+    script: echo "this is android"
+  - lang: objective-c
+    script: echo "this is macos"
+  - lang: node_js
+    script: echo "this is node"
