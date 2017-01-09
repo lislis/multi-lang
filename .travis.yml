@@ -1,9 +1,13 @@
-lang: ruby
-
 matrix:
-  - lang: android
-    script: echo "this is android"
-  - lang: objective-c
-    script: echo "this is macos"
-  - lang: node_js
-    script: echo "this is node"
+  include:
+  - sudo: required
+    dist: trusty
+    lang: android
+  - sudo: required
+    dist: precise
+    lang: objective-c
+  - sudo: required
+    lang: node_js
+
+script:
+  - echo "Hello Travis"
